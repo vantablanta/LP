@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/c3948d4f19.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
+<title> Landing Page </title>
+<meta charset="UTF-8">
+<meta name=" robots" content="index,all">
+<meta name="description" content=" Simple Landing Page.Codepen Exercise">
+
+<style>
+    #header-image{
+        
+        height:100px;
+        border-radius: 50%;
+        display: block;
+        left:20px ;
+    }
+    #nav-bar1{
+        position:relative;
+        top: -200px;
+        left: 550px;
+        text-align-last: center;
+        color:black;
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        padding: 10px;
+
+        }
+    #header-name{
+        text-align: center;
+        display: inline;
+        position: relative;
+        top: -65px;
+        left:40px;
+        font-size: 70px;
+        font-weight: normal;
+        font-family: "Sacramento";
+    }
+    #nav-bar2{
+        position:relative;
+        top: -210px;
+        right: -550px;
+        text-align-last: center;
+        text-decoration-color: none;
+        font-size: 25px;
+        }
+    #nav-bar1 a:hover{
+        background-color:#db8200;
+           }
+   
+    
+    .layout{
+        
+        padding-left: 200px;
+        padding-right:200px;
+    
+    }
+    #form{
+        text-align-last: center;
+        
+    }
+    input,label{
+        display: inline-block;
+        margin-bottom: 20px;
+        position: relative;
+        top:-100px;
+    }
+    
+</style>
+</head>
+<body>
+    
+<header id= "header">
+    <img src="https://cdn.pixabay.com/photo/2020/05/04/18/55/avocado-5130214_960_720.png" id= "header-image">
+    <h3 id="header-name">Avomarket</h3>
+    <nav id= "nav-bar2">
+        <a class="nav.link" href="" style="color: black;"><i class="fab fa-facebook"> </i></a>
+        <a class="nav.link" href="" style="color: black;"><i class="fab fa-twitter"></i></a>
+        <a class="nav.link" href="" style="color: black;"><i class="fab fa-instagram"></i></a>
+        <a class="nav.link" href="" style="color: black;"><i class="fab fa-whatsapp"></i></a>
+    </nav>
+    <nav id= "nav-bar1">
+        <a class="nav.link" href="#home" style="text-decoration: none; color:black">Home</a>
+        <a class="nav.link" href="#about" style="text-decoration: none; color:black">About</a>
+        <a class="nav.link" href="#contact" style="text-decoration: none; color:black">Contact</a>
+        <a class="nav.link" href="#shop" style="text-decoration: none; color:black">Shop</a>
+    </nav>
+    
+</header>
+    <form id="form">
+        <label for="email"><b>Organic and Natural</b></label><br>
+        <input type="email" id="email" name="email" placeholder="johndoe@email.com" styel= "width: 80px;"><br>
+        <button type="submit" 
+        style="background-color: #db8200; position:relative; top:-100px; width: 80px; border-radius: 10px; 
+        color: black; height: auto; text-emphasis: emp;">
+        Enter</button>
+    </form>
+<div class="layout">
+    <h3 id="about">About</h3>
+    <p> Avomarket was founded in 2020. We are the leading avocado farmers and sellers in the 
+        East and Central Africa region. We mainly grow Hulu and Hiwa avocados. Our products are organic and natural.
+        We pride ourselves with the knowledge that we have managed to maintian a steady and fair market price as well 
+        as good standards. Visit our shop to check out more. <a href="#shop"><button>Visit shop</button></a></p>
+    <h3 id="contact">Contact</h3>
+    <p> <i class="fas fa-location-arrow"></i> We are located in Yaya Mall, 1<sup> st</sup> floor </p>
+    <p> <i class="fas fa-phone-alt"></i> Call us on 0712-345-678 or 0712-345-679 </p>
+    <p> <i class="fas fa-envelope"></i> Shoot us an email at email@avomarket.com </p>
+
+    <h3 id="shop">Shop</h3>
+    <div class="shop-table">
+        <table>
+            <tr><th> Organic Hiwa</th>
+               <th> Organic Hulu</th>
+               <th> Imported Siha</th> </tr>
+            <tr><td><b>Ksh 50</b></td>
+               <td><b>Ksh 100</b></td>
+               <td><b>Ksh 300</b></td></tr>
+            <tr><td> Lorem Ipsum</td>
+                <td> Lorem Ipsum</td>
+                <td> Lorem Ipsum</td></tr>
+            <tr><td> Lorem Ipsum</td>
+                <td> Lorem Ipsum</td>
+                <td> Lorem Ipsum</td></tr>
+            
+            <tr><span>
+                <td> <button>Order</button></td>
+                <td> <button>Order</button></td>
+                <td> <button>Order</button></tr></span>
+        </table>
+        </div>
+            
+    </div>
+</body>
+</html>
