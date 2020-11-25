@@ -49,7 +49,7 @@
         font-size: 25px;
         }
     #nav-bar1 a:hover{
-        background-color:#db8200;
+        background-color: goldenrod;
            }
    
     
@@ -78,7 +78,26 @@
         margin-bottom: 100px;
         padding-left: 20px;
     }
+    .shop-table{
+       width: 100%;
+       text-align: left;
+       border-collapse: collapse; 
+       padding-left: 100px;
+       padding-top: 100px;
+    }
+    .shop-table th { 
+       background-color: goldenrod;
+       color: white; 
+    }
+    .shop-table td, .shop-table th { 
+       padding: 10px;
+       
+    }
     
+    
+
+
+
 </style>
 </head>
 <body>
@@ -104,7 +123,7 @@
         <label for="email"><b>Organic and Natural</b></label><br>
         <input type="email" id="email" name="email" placeholder="johndoe@email.com" styel= "width: 80px;"><br>
         <button type="submit" 
-        style="background-color: #db8200; position:relative; top:-100px; width: 80px; border-radius: 10px; 
+        style="background-color: goldenrod; position:relative; top:-100px; width: 80px; border-radius: 10px; 
         color: black; height: auto; text-emphasis: emp;">
         Enter</button>
     </form>
@@ -119,10 +138,10 @@
     <p> <i class="fas fa-phone-alt"></i> Call us on 0712-345-678 or 0712-345-679 </p>
     <p> <i class="fas fa-envelope"></i> Shoot us an email at email@avomarket.com </p>
 
-    <h3 id="shop">Shop</h3>
+    
 
-    <div class="shop-table">
-        <table class = "table1">
+    <div class="shop-table" id="shop">
+        <table class= "table1" >
             <tr><th> Organic Hiwa</th></tr></tr>
             <tr><td><b>Ksh 50</b></td></tr>
             <tr><td> Lorem Ipsum</td></tr>
@@ -130,14 +149,14 @@
             <tr><td> <button>Order</button></td></tr>
         </table>
         <table class= "table2">
-            <tr><th> Organic Hulu</th></tr>
+            <tr><th class="row"> Organic Hulu</th></tr>
             <tr><td><b>Ksh 100</b></td></tr>
             <tr><td> Lorem Ipsum</td></tr>
             <tr><td> Lorem Ipsum</td></tr>
            <tr><td> <button>Order</button></td></tr>
         </table>
         <table class ="table3">
-            <tr><th> Imported Siha</th></tr>
+            <tr><th class="row"> Imported Siha</th></tr>
             <tr><td><b>Ksh 300</b></td></tr>
             <tr><td> Lorem Ipsum</td></tr>
             <tr><td> Lorem Ipsum</td></tr>
