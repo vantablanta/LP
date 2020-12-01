@@ -26,7 +26,7 @@
     #nav-bar1{
         position:fixed;
         top: 0px;
-        right :10px;
+        right :50px;
         text-align-last: center;
         width: 20%;
         display: flex;
@@ -92,8 +92,9 @@
     #shop{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         padding-top: 50px;
+        left:50px;
     }
 
     /*.shop-table{
@@ -117,6 +118,7 @@
         display: flex;
         flex-direction: column;;
         flex-wrap: wrap;
+        left: 50px;
     }
 
     #product-images{
@@ -125,6 +127,7 @@
         justify-content: space-around;
         margin-bottom: 100px;
         position: relative;
+        left: 100px
         
          }
 
@@ -197,17 +200,17 @@
 
 <div class="layout">
     
-    <p id="about" style="height: 600px; width:600; margin-bottom: 100px; "> Avomarket was founded in 2020. We are the leading avocado farmers and sellers in the 
+    <p id="about" style="height: 600px; width:600; margin-bottom: 20px; "> Avomarket was founded in 2020. We are the leading avocado farmers and sellers in the 
         East and Central Africa region. We mainly grow Hulu and Hiwa avocados. Our products are organic and natural.
         We pride ourselves with the knowledge that we have managed to maintian a steady and fair market price as well 
         as good standards. Visit our shop to check out more. <a href="#shop"><button>Visit shop</button></a></p>
 
-        <iframe id ="video" width="700px" height="300px"  style ="display:block; margin:auto;"src="https://www.youtube.com/embed/Cw1yyyq-rz8" 
+        <iframe id ="video" width="700px" height="300px"  style ="display:block; margin:auto; left:50px; right: 50px;"src="https://www.youtube.com/embed/Cw1yyyq-rz8" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen></iframe>
 
     <div id="contact">
-    <i class="fas fa-location-arrow" style="font-size:48px; color: goldenrod; padding-top:50px; padding-right:20px;"></i> We are located in Yaya Mall, 1<sup> st</sup> floor
+    <i class="fas fa-location-arrow" style="font-size:48px; color: goldenrod; padding-top:50px; padding-right:20px;"></i><p style=" display: flex; flex-wrap: nowrap;"> We are located in Yaya Mall, 1<sup> st</sup> floor</p>
     <i class="fas fa-phone-alt" style="font-size:48px; color: goldenrod; padding-top:50px; padding-right:20px;"></i> Call us on 0712-345-678 or 0712-345-679 
     <i class="fas fa-envelope" style="font-size:48px; color: goldenrod; padding-top:50px; padding-right:20px;">
     </i> Shoot us an email at email@avomarket.com</div>
@@ -244,8 +247,8 @@
         <label for="email"><b>Organic and Natural</b></label><br>
         <input type="email" id="email" name="email" placeholder="johndoe@email.com" style= "width: 200px;"><br>
         <button type="submit" 
-        style="background-color: goldenrod; position:relative; width: 100px; border-radius: 10px; 
-        color: black; height: auto; text-emphasis: emp;">
+        style="background-color: goldenrod; position:relative; height: 100px; width: 50px; border-radius: 10px; 
+        color: black; height: auto; text-emphasis: emp; top: -50px;">
         Enter</button>
     </form>
 
