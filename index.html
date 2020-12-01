@@ -69,14 +69,11 @@
            }
    
     
-    .layout{
-        
-        padding-left: 200px;
-        padding-right:200px;
     
-    }
+    
     #form{
         text-align-last: center;
+        margin-top:300px;
         
     }
     input,label{
@@ -131,14 +128,12 @@
         
          }
 
-    /*@media screen and(min-width: 600px){
+    @media screen and(max-width: 600px){
         body {
             width: "auto"; 
             height:auto;
             padding-left: 0px;}
-        .layout{
-            padding-left: 0px;
-            padding-right: 0px;
+        
         }
         #product-images{
             display: block;
@@ -186,14 +181,7 @@
     </nav>
     
 </header>
-    <form id="form" action=" https://www.freecodecamp.com/email-submit">
-        <label for="email"><b>Organic and Natural</b></label><br>
-        <input type="email" id="email" name="email" placeholder="johndoe@email.com" style= "width: 200px;"><br>
-        <button type="submit" 
-        style="background-color: goldenrod; position:relative; top:-100px; width: 100px; border-radius: 10px; 
-        color: black; height: auto; text-emphasis: emp;">
-        Enter</button>
-    </form>
+    
 
     <div id ="product-images">
         
@@ -215,10 +203,10 @@
             allowfullscreen></iframe>
 
     <div id="contact">
-    <p> <i class="fas fa-location-arrow" style="font-size:48px; color: goldenrod; padding-top:50px; padding-right:20px;"></i> We are located in Yaya Mall, 1<sup> st</sup> floor </p>
-    <p> <i class="fas fa-phone-alt" style="font-size:48px; color: goldenrod; padding-top:50px; padding-right:20px;"></i> Call us on 0712-345-678 or 0712-345-679 </p>
-    <p> <i class="fas fa-envelope" style="font-size:48px; color: goldenrod; padding-top:50px; padding-right:20px;">
-    </i> Shoot us an email at email@avomarket.com</p></div>
+    <i class="fas fa-location-arrow" style="font-size:48px; color: goldenrod; padding-top:50px; padding-right:20px;"></i> We are located in Yaya Mall, 1<sup> st</sup> floor
+    <i class="fas fa-phone-alt" style="font-size:48px; color: goldenrod; padding-top:50px; padding-right:20px;"></i> Call us on 0712-345-678 or 0712-345-679 
+    <i class="fas fa-envelope" style="font-size:48px; color: goldenrod; padding-top:50px; padding-right:20px;">
+    </i> Shoot us an email at email@avomarket.com</div>
 
     
 
@@ -247,5 +235,15 @@
     </div>
    
     </div>
+
+    <form id="form" action=" https://www.freecodecamp.com/email-submit">
+        <label for="email"><b>Organic and Natural</b></label><br>
+        <input type="email" id="email" name="email" placeholder="johndoe@email.com" style= "width: 200px;"><br>
+        <button type="submit" 
+        style="background-color: goldenrod; position:relative; width: 100px; border-radius: 10px; 
+        color: black; height: auto; text-emphasis: emp;">
+        Enter</button>
+    </form>
+
 </body>
 </html>
