@@ -10,6 +10,15 @@
 <meta name="description" content=" Simple Landing Page.Codepen Exercise">
 
 <style>
+
+    /*body{
+        background-image: url(https://cdn.pixabay.com/photo/2017/03/04/12/10/avocado-2115922__340.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity:0.5;
+    }*/
+
     #header-image{
         
         height:100px;
@@ -18,16 +27,22 @@
         left:20px ;
     }
     #nav-bar1{
-        position:relative;
-        top: -200px;
+        position:fixed;
+        top: 20px;
         left: 550px;
         text-align-last: center;
-        color:black;
         width: 20%;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        height: 100%;
+        background-color: rgba(55, 231, 10, 0.344);
+        border-radius: 20px;
         padding: 10px;
+        font-weight:bold;
+        
+
+        
+        
 
         }
     #header-name{
@@ -49,7 +64,7 @@
         font-size: 25px;
         }
     #nav-bar1 a:hover{
-        background-color: goldenrod;
+        background-color:greenyellow;
            }
    
     
@@ -93,7 +108,42 @@
        padding: 10px;
        
     }
-    
+    #product-images{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        margin-bottom: 100px;
+        position: relative;
+        left:50px;
+        right:-1000px
+        
+         }
+
+    @media screen and(min-width: 600px){
+        body {
+            width: "auto"; 
+            height:auto;
+            padding-left: 0px;}
+        .layout{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        #product-images{
+            display: block;
+            padding-left: 500px;    
+        }
+        #about{
+            width: 300px;
+        }
+        #video {
+            height:100px ;
+            width: 60%;
+        }
+        #nav-bar1{
+            width: auto;
+        }
+
+        }
     
     
     
@@ -105,7 +155,7 @@
 <body>
     
 <header id= "header">
-    <img src="https://cdn.pixabay.com/photo/2020/05/04/18/55/avocado-5130214_960_720.png" id= "header-image">
+    <img src="https://cdn.pixabay.com/photo/2020/05/04/18/55/avocado-5130214_960_720.png" id= "header-image" alt ="image of a cartoon avocado">
     <h3 id="header-name">Avomarket</h3>
     <nav id= "nav-bar2">
         <a class="nav.link" href="" style="color: black;"><i class="fab fa-facebook"> </i></a>
@@ -121,7 +171,7 @@
     </nav>
     
 </header>
-    <form id="form">
+    <form id="form" action=" https://www.freecodecamp.com/email-submit">
         <label for="email"><b>Organic and Natural</b></label><br>
         <input type="email" id="email" name="email" placeholder="johndoe@email.com" style= "width: 200px;"><br>
         <button type="submit" 
@@ -129,12 +179,25 @@
         color: black; height: auto; text-emphasis: emp;">
         Enter</button>
     </form>
+
+    <div id ="product-images">
+        
+        <img src="https://cdn.pixabay.com/photo/2017/05/23/22/36/vegetables-2338824__340.jpg" alt="image of avocado" style="width:300px">
+        <img src="https://cdn.pixabay.com/photo/2017/03/04/12/10/avocado-2115922__340.jpg" alt ="avocado" style="width:300px">
+        <img src="https://cdn.pixabay.com/photo/2016/03/05/19/03/appetite-1238257__340.jpg" alt="image of avocado" style="width:300px">
+    </div>
+    
+
 <div class="layout">
-    <h3 id="about">About</h3>
-    <p> Avomarket was founded in 2020. We are the leading avocado farmers and sellers in the 
+    
+    <p id="about"> Avomarket was founded in 2020. We are the leading avocado farmers and sellers in the 
         East and Central Africa region. We mainly grow Hulu and Hiwa avocados. Our products are organic and natural.
         We pride ourselves with the knowledge that we have managed to maintian a steady and fair market price as well 
         as good standards. Visit our shop to check out more. <a href="#shop"><button>Visit shop</button></a></p>
+
+        <iframe id ="video" width="50%" height="300"  style ="display:block; margin:auto;"src="https://www.youtube.com/embed/Cw1yyyq-rz8" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
 
     <div id="contact">
     <p> <i class="fas fa-location-arrow" style="font-size:48px; color: goldenrod; padding-top:50px; padding-right:20px;"></i> We are located in Yaya Mall, 1<sup> st</sup> floor </p>
