@@ -25,8 +25,8 @@
     }
     #nav-bar1{
         position:fixed;
-        top: 20px;
-        left: 550px;
+        top: 0px;
+        right :10px;
         text-align-last: center;
         width: 20%;
         display: flex;
@@ -52,14 +52,18 @@
         font-weight: normal;
         font-family: "Sacramento";
     }
-    #nav-bar2{
+    /*#nav-bar2{
         position:relative;
-        top: -210px;
-        right: -550px;
+        top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        left: 0px;
         text-align-last: center;
         text-decoration-color: none;
         font-size: 25px;
-        }
+        }*/
+
     #nav-bar1 a:hover{
         background-color:greenyellow;
            }
@@ -82,41 +86,52 @@
         top:-100px;
     }
     .table1, .table2, .table3{
-        float: left;
-        padding-right: 100px;
+        
+       
         line-height: 2;
         border: 1px solid black;
-        margin-right: 50px;
-        margin-bottom: 100px;
-        padding-left: 20px;
+        
     }
-    .shop-table{
+    #shop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+
+    /*.shop-table{
        width: 100%;
        text-align: left;
        border-collapse: collapse; 
        padding-left: 100px;
        padding-top: 100px;
-    }
+    }*/
+
     .shop-table th { 
        background-color: goldenrod;
        color: white; 
     }
+
     .shop-table td, .shop-table th { 
        padding: 10px;
        
     }
+    #contact{
+        display: flex;
+        flex-direction: column;;
+        flex-wrap: wrap;
+    }
+
     #product-images{
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-evenly;
+        justify-content: space-around;
         margin-bottom: 100px;
         position: relative;
-        left:50px;
-        right:150px;
         
          }
 
-    @media screen and(min-width: 600px){
+    /*@media screen and(min-width: 600px){
         body {
             width: "auto"; 
             height:auto;
@@ -141,7 +156,7 @@
             width: auto;
         }
 
-        }
+        }*/
     
     
     
@@ -155,12 +170,14 @@
 <header id= "header">
     <img src="https://cdn.pixabay.com/photo/2020/05/04/18/55/avocado-5130214_960_720.png" id= "header-image" alt ="image of a cartoon avocado">
     <h3 id="header-name">Avomarket</h3>
-    <nav id= "nav-bar2">
+    
+    <!--<nav id= "nav-bar2">
         <a class="nav.link" href="" style="color: black;"><i class="fab fa-facebook"> </i></a>
         <a class="nav.link" href="" style="color: black;"><i class="fab fa-twitter"></i></a>
         <a class="nav.link" href="" style="color: black;"><i class="fab fa-instagram"></i></a>
         <a class="nav.link" href="" style="color: black;"><i class="fab fa-whatsapp"></i></a>
-    </nav>
+    </nav>-->
+
     <nav id= "nav-bar1">
         <a class="nav.link" href="#home" style="text-decoration: none; color:black">Home</a>
         <a class="nav.link" href="#about" style="text-decoration: none; color:black">About</a>
